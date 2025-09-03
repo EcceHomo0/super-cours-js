@@ -1,6 +1,8 @@
 import collection from 'easter-egg-collection'
 
 console.log('Hello World from main.js')
+console.log(import.meta.env.VITE_SOME_KEY) // "123"
+console.log(import.meta.env.VITE_DB_PASSWORD) // undefined
 //* On est dans /src/main.js
 
 // ! ⬇ Ancienne version de base (counter) 

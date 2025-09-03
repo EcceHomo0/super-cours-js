@@ -1,3 +1,5 @@
+import collection from 'easter-egg-collection'
+
 console.log('Hello World from main.js')
 //* On est dans /src/main.js
 

@@ -1,8 +1,15 @@
 import collection from 'easter-egg-collection'
+import {moduleHello} from './pages/services/hello.js';
+import {renderTimeLine} from './pages/services/timelineService.js';
+import {contactApi} from './pages/services/welcomeService.js';
 
 console.log('Hello World from main.js')
 console.log(import.meta.env.VITE_SOME_KEY) // "123"
 console.log(import.meta.env.VITE_DB_PASSWORD) // undefined
+
+// moduleHello('jojo');
+// renderTimeLine();
+contactApi();
 //* On est dans /src/main.js
 
 // ! ⬇ Ancienne version de base (counter) 

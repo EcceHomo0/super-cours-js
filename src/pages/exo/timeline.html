@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="../services/timelineService.js"></script>
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Jefff303.js</title>
+</head>
+
+<body class="min-h-screen">
+    <div class="drawer min-h-screen">
+        <input id="drawer-toggle" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col min-h-screen">
+            <!-- Navbar -->
+            <div id="navbar-container"></div>
+            <!-- <h1 class="text-center text-4xl font-bold mb-4">Timeline</h1> -->
+            <!-- Main Content -->
+            <main class="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+                <!-- La timeline sera générée ici avec ce composant DaisyUI ⬇️ -->
+                <!-- https://daisyui.com/components/timeline/#timeline-witimelineth-icon-snapped-to-the-start -->
+                <!-- <ul id="timeline" class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"></ul> -->
+                 <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+                    <li>
+                        <div class="timeline-start mb-10 md:text-end">
+                        <time class="font-mono italic">1984</time>
+                        <div class="text-lg font-black">First Macintosh computer</div>
+                        The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh
+                        personal computer. It played a pivotal role in establishing desktop publishing as a general
+                        office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed
+                        in a beige case with integrated carrying handle; it came with a keyboard and single-button
+                        mouse.
+                        </div>
+                    </li>
+                </ul>
+
+            </main>
+            <!-- Footer -->
+            <div id="footer-container"></div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,4 @@
 import collection from 'easter-egg-collection'
-import {moduleHello} from './pages/services/hello.js';
 import {renderTimeLine} from './pages/services/timelineService.js';
 import {contactApi} from './pages/services/welcomeService.js';
 
@@ -7,9 +6,12 @@ console.log('Hello World from main.js')
 console.log(import.meta.env.VITE_SOME_KEY) // "123"
 console.log(import.meta.env.VITE_DB_PASSWORD) // undefined
 
-// moduleHello('jojo');
+document.addEventListener('DOMContentLoaded', () => {
+    renderTimeLine('#timeline');
+  });
+
 // renderTimeLine();
-contactApi();
+// contactApi();
 //* On est dans /src/main.js
 
 // ! ⬇ Ancienne version de base (counter) 
@@ -38,10 +40,10 @@ contactApi();
 
 // setupCounter(document.querySelector('#counter'))
 
-let dynamisation1 = document.getElementsByClassName('btn btn-ghost text-lg sm:text-xl');
-let siteName = "Nouveau site";
-dynamisation1[0].innerText = siteName;
+// let dynamisation1 = document.getElementsByClassName('btn btn-ghost text-lg sm:text-xl');
+// let siteName = "Nouveau site";
+// dynamisation1[0].innerText = siteName;
 
-let dynamisation2 = document.getElementsByClassName('text-xs sm:text-sm');
-let newDate = new Date().getFullYear();
-dynamisation2[1].innerText = `Copyright © ${newDate} - Tous droits réservés par ${siteName}`;
+// let dynamisation2 = document.getElementsByClassName('text-xs sm:text-sm');
+// let newDate = new Date().getFullYear();
+// dynamisation2[1].innerText = `Copyright © ${newDate} - Tous droits réservés par ${siteName}`;
